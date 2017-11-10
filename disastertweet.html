@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Disaster Tweet</title>
+<style>
+		body{background: url("circuits.jpg");background-size: cover; background-repeat: no-repeat;}
+
+		table.table1 {width: 100%; }
+		table.table1 td{padding: 5px; border-left: 1px solid #ddd; text-align: center;}
+		table.table1 td:hover{background-color: #f5f5f5}
+		table.table1 td a {display: block; width: 100%;}
+
+		table.table2 {width: 100%; }
+		table.table2 td{text-align: left; vertical-align: top;}
+
+
+	</style>
+</head>
+<body>
+<table class="table1">
+	<tr>
+		<td width="16%"><a href="index.html" title="Index">Index</a></td>
+		<td width="16%"><a href="my_bio.html" title="My Bio">My Bio</a></td>
+		<td width="16%"><a href="Courses.html" title="Course Works">Course Works</a></td>
+		<td width="16%"><a href="expproj.html" title="Experience and Projects">Experience and Projects</a></td>
+		<td width="16%"><a href="publications.html" title="Publications">Publications</a></td>
+		<td width="16%"><a href="contact.html" title="Contact Me">Contact Me</a></td>
+	</tr>
+</table>
+<hr />
+
+<h1>Disaster Tweet</h1>
+<hr />
+
+<table class="table2">
+	<tr>
+		<td><h2><p>Inspiration</p></h3>
+		<p><h3>During Hurricane Harvey, people in Houston were unable to reach 911 because the line is jammed by people asking for help. Instead, a lot of people post their or relative's address on Twitter and tagged @Houstonpolice and @Houstonoem. However, there is no existing way of telling these urgent messages apart from regular tweets expressing sentiments. We build Disaster Tweet to help people get the rescue they needed in future catastrophes.</h3></p>
+		<p><h2>How we built it</h2></p>
+		<p><h3>Using Twitter API, we grabbed all tweets containing the search key words, in this case, is @houstoneom help and @houstonpolice help. Using the Twitterscaper library, we can grab data without repetition at certain time intervals. Then each tweet is passed into usaddress library, to filter out tweets with potential addresses. We analyse the address and classify those with usable number and street name as valid address. These addresses, along with time stamp, real names of people and the tweet itself is sent into a database. On the front end, the information is presented on a website with google maps api to show the location of rescue requests on a map. Rescuers are allowed to change the status of messages in the database, to mark people as being rescued.</p></h5></td>
+
+		<td width="50%"><img src = "pennapps2.jpg" height="320"/><br /><img src = "pennapps1.jpg" height="350"/><br /><img src = "pennapps3.jpg" height="410"/></td>
+	</tr>
+	
+</table>
+
+
+<br/>
+
+</body>
+</html>

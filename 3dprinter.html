@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Paste 3D Printer</title>
+<style>
+		body{background: url("circuits.jpg");background-size: cover; background-repeat: no-repeat;}
+
+		table.table1 {width: 100%; }
+		table.table1 td{padding: 5px; border-left: 1px solid #ddd; text-align: center;}
+		table.table1 td:hover{background-color: #f5f5f5}
+		table.table1 td a {display: block; width: 100%;}
+
+		table.table2 {width: 100%; }
+		table.table2 td{text-align: left; vertical-align: top;}
+
+
+	</style>
+</head>
+<body>
+<table class="table1">
+	<tr>
+		<td width="16%"><a href="index.html" title="Index">Index</a></td>
+		<td width="16%"><a href="my_bio.html" title="My Bio">My Bio</a></td>
+		<td width="16%"><a href="Courses.html" title="Course Works">Course Works</a></td>
+		<td width="16%"><a href="expproj.html" title="Experience and Projects">Experience and Projects</a></td>
+		<td width="16%"><a href="publications.html" title="Publications">Publications</a></td>
+		<td width="16%"><a href="contact.html" title="Contact Me">Contact Me</a></td>
+	</tr>
+</table>
+<hr />
+
+<h1>3D Printer for PDMS Paste Ink</h1>
+<hr />
+
+<table class="table2">
+	<tr><td><h4><p>
+		During summer 2017, I work with Prof. Jordan Raney at <a href="https://raney.seas.upenn.edu/" title="Lab home page">Architechted Materials Lab, University of Pennsylvania</a>. I work mostly on modifying a commercial 3D printer to print in polydimethylsiloxane (PDMS) and other paste like materials. 3D printers available on the market are mostly Fused Deposition Modeling (FDM) printers, which use a nozzle moving on the 3 axis and melted plastic to print models. Other printers that can print rubber like materials are at price range of 100K dollars. The goal of my research is to develop a low cost solution to printing macro scale structures from paste ink. </p>
+		<p>
+		I built upon the Makergear M2 FDM 3D printer, but this mod applies to all cartesian printers. Instead of a hotend nozzle, I designed an auger screw paste extruder, which is powered by the original filament extrusion motor. The paste ink is pushed into the auger from another syringe by air pressure, and then pushed out of the nozzle by the auger. Therefore, minimal changes in firmware is needed for this adaptation. I have also programmed a control software on matlab, that gave us full freedom to control the printer, without using its original software on the computer’s end.
+	</p><p>
+		As the electrical engineer of my group, I work closely with materials researchers in our group, who outlined the requirements and the machine shop to manufacture the parts. I need to do a lot of mechanical design and programming. I also learned that although coding is an essential skill, it cannot solve all problems. All basic mechanical and circuitry pave to road to effective solution. I grow a strong preference towards matlab and Simulink, which provides efficient programming and vast libraries. However, what’s happening at the root is obscured, but that requires a lot of time to learn and understand, which is beyond the scope of this project.
+	</p><p>
+		One limitation that seems impossible to break is the slicer algorithm, which converts a 3D mesh model into 3D printer motor movements. A lot of times, we need the paths to be a specific orientation, which affects how fibers line up, but all available slicing softwares do not provide this function. We’ve tried with hand code movements and using open source coordinate codes, but they are not satisfying. We’ll need to think of a better way to generate gcode. The 3D printer we have also has limitations in the structure it can print. If just to test the structural strength of a complex design, I would recommend a stereolithography printer. I learned that using the right tool is often better than trying with inferior tools.
+	</p><p>
+		I feel that electrical engineer bridges the gap between mechanists and programmers. I have to understand what firmware/software can do, and what the machine is capable of. I also need to understand firmware, which is between control interface on computer and actual movements of a machine. This research is very rewarding in product development and work management.</h4></p>
+	<img src = "3dposter.jpg" height="500"/></td>
+
+		<td width="50%"><img src = "3d1.jpg" height="320"/><br /><img src = "3d2.jpg" height="350"/><br /><img src = "3d3.jpg" height="410"/></td>
+	</tr>
+	
+</table>
+
+
+<br/>
+
+</body>
+</html>
