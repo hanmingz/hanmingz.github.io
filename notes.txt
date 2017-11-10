@@ -1,0 +1,19 @@
+<p>this is another paragraph <br />to start another line</p>
+<!-- comment -->
+
+<a href="second.html" title="Courses taken at Upenn">Course Work</a>
+<br />
+<img src = "Hanming.jpg" height="400"/>
+
+<br />
+<br />
+
+<ul>
+	<li>new sungalsses</li>
+	<li>painting</li>
+</ul>
+
+<ol>
+	<li>first step</li>
+	<li>second step</li>
+</ol>
